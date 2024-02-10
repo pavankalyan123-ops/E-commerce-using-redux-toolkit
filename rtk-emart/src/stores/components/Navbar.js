@@ -27,9 +27,11 @@ const Navbar = () => {
           <Button type='primary'>Sign Out</Button>
         </Menu.Item>
         <Menu.Item key="4" style={{ marginRight: '20px' }}>
+          <Link to="/view">
           <Badge count={cartDetails.length}>
             <ShoppingCartOutlined style={{ fontSize: '20px' }} />
           </Badge>
+          </Link>
           <span style={{ marginLeft: '8px' }}>Cart Items</span>
           <span style={{ marginLeft: '8px' }}>{totalPrice}/-</span>
         </Menu.Item>
